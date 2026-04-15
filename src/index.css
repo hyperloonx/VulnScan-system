@@ -1,0 +1,57 @@
+:root {
+  color-scheme: dark;
+  --bg: #090b12;
+  --bg-2: #0d101a;
+  --surface: #111625;
+  --card-bg: rgba(17, 22, 37, 0.88);
+  --card-bg-strong: rgba(15, 19, 31, 0.96);
+  --border: #233053;
+  --text: #e8ecfb;
+  --text-muted: #a0accf;
+  --accent: #5a4bff;
+  --accent-2: #16b8ff;
+  --danger: #ff5a6f;
+  --soft-shadow: 0 12px 30px rgba(4, 8, 20, 0.45);
+
+  font-family:
+    Inter,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 0%, #18274b 0%, transparent 35%),
+    radial-gradient(circle at 100% 0%, #152b49 0%, transparent 30%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--text);
+}
